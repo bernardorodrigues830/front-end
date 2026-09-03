@@ -1,0 +1,100 @@
+<!doctype html>
+<!-- color-scheme no <html> garante fundo claro mesmo em navegador no tema escuro.
+     O Preflight do Tailwind deixa o canvas transparente e o texto ficaria invisivel. -->
+<html lang="pt-BR" style="color-scheme: light">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light">
+    <title>Evento — Checkpoint 1</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.3.3"></script>
+
+    <!-- ============================================================
+       ÁREA EDITÁVEL — o <head> é seu.
+       Carregue aqui as fontes da sua carta e declare os tokens.
+       Os seis tokens abaixo são obrigatórios e os nomes não mudam.
+       ============================================================ -->
+
+    <!-- 1. Fontes da sua carta (Google Fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ultra&family=Lato:wght@400;700&display=swap">
+
+    <!-- 2. Tokens da sua carta -->
+    <style type="text/tailwindcss">
+        @theme {
+      --color-marca-50:  #F0E4D4;
+      --color-marca-900: #221A15;
+      --color-marca-500: #B23A18;
+
+      --font-display: "Ultra", sans-serif;
+      --font-corpo:   "Lato", sans-serif;
+
+      --radius-card: 4px;
+    }
+  </style>
+
+    <!-- ============================================================
+       FIM DA ÁREA EDITÁVEL
+       Daqui para baixo, você só adiciona class="" e troca textos.
+       ============================================================ -->
+</head>
+
+<body>
+
+    <header class=""id="topo">
+        <a href="#hero">Fumaça</a>
+        <nav aria-label="Principal">
+            <ul>
+                <li><a href="#hero">O evento</a></li>
+                <li><a href="#">Ingressos</a></li>
+                <li><a href="#rodape">Contato</a></li>
+            </ul>
+        </nav>
+        <a href="#">Garantir ingresso</a>
+    </header>
+
+    <main>
+
+        <section id="hero">
+            <p>3ª edição</p>
+            <h1>Fumaça</h1>
+            <p>Festival de churrasco. Uma noite defumado, robusto e rústico, para quem atravessa a cidade atrás do que ainda não viu.</p>
+            <div>
+                <a href="#">Garantir ingresso</a>
+                <a href="#rodape">Como chegar</a>
+            </div>
+            <dl>
+                <div>
+                    <dt>Data</dt>
+                    <dd>14 de novembro de 2026</dd>
+                </div>
+                <div>
+                    <dt>Local</dt>
+                    <dd>Galpão da Vila, São Paulo</dd>
+                </div>
+                <div>
+                    <dt>Ingressos</dt>
+                    <dd>a partir de R$ 40</dd>
+                </div>
+            </dl>
+        </section>
+    </main>
+
+    <footer id="rodape">
+        <p>Fumaça</p>
+        <nav aria-label="Rodapé">
+            <ul>
+                <li><a href="#">Ingressos</a></li>
+                <li><a href="#">Imprensa</a></li>
+                <li><a href="#topo">Voltar ao topo</a></li>
+            </ul>
+        </nav>
+        <p>Realização independente. São Paulo, 2026.</p>
+    </footer>
+
+</body>
+
+</html>
