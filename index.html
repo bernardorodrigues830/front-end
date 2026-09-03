@@ -42,57 +42,79 @@
        ============================================================ -->
 </head>
 
-<body>
+<body class="bg-marca-50 text-marca-900 font-corpo">
 
-    <header class=""id="topo">
-        <a href="#hero">Fumaça</a>
+    <header id="topo" class="flex items-center justify-between px-10 py-5 border-b border-marca-900/15">
+        <a href="#hero" class="font-display text-xl text-marca-900">
+            Fumaça
+        </a>
         <nav aria-label="Principal">
-            <ul>
+            <ul class="flex items-center gap-6 text-xs font-semibold uppercase tracking-wide">
                 <li><a href="#hero">O evento</a></li>
                 <li><a href="#">Ingressos</a></li>
                 <li><a href="#rodape">Contato</a></li>
             </ul>
         </nav>
-        <a href="#">Garantir ingresso</a>
+        <a href="#"
+            class="bg-marca-900 text-marca-50 text-xs font-semibold uppercase tracking-wider px-5 py-3 rounded-[var(--radius-card)]">
+            Garantir ingresso
+        </a>
     </header>
 
-    <main>
+    <main class="px-10 py-12 max-w-6xl mx-auto">
 
         <section id="hero">
-            <p>3ª edição</p>
-            <h1>Fumaça</h1>
-            <p>Festival de churrasco. Uma noite defumado, robusto e rústico, para quem atravessa a cidade atrás do que ainda não viu.</p>
-            <div>
-                <a href="#">Garantir ingresso</a>
-                <a href="#rodape">Como chegar</a>
+            <p class="text-xs font-bold uppercase tracking-widest text-marca-500 mb-3">
+                3ª edição
+            </p>
+            <h1 class="font-display text-6xl text-marca-900 mb-5">
+                Fumaça
+            </h1>
+            <p class="text-base max-w-lg text-marca-900/85 mb-10 leading-relaxed">
+                Festival de churrasco. Uma noite defumado, robusto e rústico, para quem atravessa a cidade atrás do que
+                ainda não viu.
+            </p>
+            <div class="flex items-center gap-3 mb-12">
+                <a href="#"
+                    class="bg-marca-500 text-marca-50 text-xs font-bold uppercase tracking-wider px-7 py-3.5 rounded-[var(--radius-card)]">
+                    Garantir ingresso
+                </a>
+                <a href="#rodape"
+                    class="border-2 border-marca-900 text-marca-900 text-xs font-bold uppercase tracking-wider px-7 py-3.5 rounded-[var(--radius-card)]">
+                    Como chegar
+                </a>
             </div>
-            <dl>
+            <dl class="border-t-2 border-marca-500 pt-6 grid grid-cols-3 gap-6">
                 <div>
-                    <dt>Data</dt>
-                    <dd>14 de novembro de 2026</dd>
+                    <dt class="text-xs font-bold uppercase tracking-wider text-marca-500 mb-1.5">Data</dt>
+                    <dd class="font-display text-lg text-marca-900">14 de novembro de 2026</dd>
                 </div>
                 <div>
-                    <dt>Local</dt>
-                    <dd>Galpão da Vila, São Paulo</dd>
+                    <dt class="text-xs font-bold uppercase tracking-wider text-marca-500 mb-1.5">Local</dt>
+                    <dd class="font-display text-lg text-marca-900">Galpão da Vila, São Paulo</dd>
                 </div>
                 <div>
-                    <dt>Ingressos</dt>
-                    <dd>a partir de R$ 40</dd>
+                    <dt class="text-xs font-bold uppercase tracking-wider text-marca-500 mb-1.5">Ingressos</dt>
+                    <dd class="font-display text-lg text-marca-900">a partir de R$ 40</dd>
                 </div>
             </dl>
         </section>
     </main>
 
-    <footer id="rodape">
-        <p>Fumaça</p>
+    <footer id="rodape" class="flex items-center justify-between px-10 py-6 border-t border-marca-900/15">
+        <p class="font-display text-lg text-marca-900">
+            Fumaça
+        </p>
         <nav aria-label="Rodapé">
-            <ul>
+            <ul class="flex items-center gap-6 text-xs font-medium uppercase tracking-wider text-marca-900">
                 <li><a href="#">Ingressos</a></li>
                 <li><a href="#">Imprensa</a></li>
                 <li><a href="#topo">Voltar ao topo</a></li>
             </ul>
         </nav>
-        <p>Realização independente. São Paulo, 2026.</p>
+        <p class="text-[11px] text-marca-900/60 font-medium">
+            Realização independente. São Paulo, 2026.
+        </p>
     </footer>
 
 </body>
